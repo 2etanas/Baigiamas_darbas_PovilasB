@@ -1,0 +1,125 @@
+*{
+    /* background-color: grey; */
+    
+}
+nav {
+    border-radius: 15px;
+
+    background-color: rgb(219, 240, 126);
+
+}
+.navbar{
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(219, 240, 126);
+    display: flex;
+}
+.navbar img {
+    background-color: rgb(219, 240, 126);
+    padding: 1rem;
+    border-radius: 15px;
+
+}
+.navbar li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .navbaras {
+    float: right;
+    text-decoration: none;
+    background-color: rgb(219, 240, 126);
+    align-items: center;
+}
+.navbar .navbaras a {
+    color: rgb(213, 114, 200);
+    text-decoration: none;
+    font-size: large;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    background-color: rgb(219, 240, 126);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.navbar .navbaras a:hover {
+    background-color: rgb(65, 92, 25);   
+}
+.masterContainer {
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
+    display: flex;
+}
+.rightBlock {
+    width: 33.33%;
+    height: 80%;
+}
+.masterContainer .infoContainer{
+    color: rgb(31, 28, 22);
+    background-color: blanchedalmond;
+    width: auto;
+    border-radius: 25px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.masterContainer .infoContainer .infoCard{
+    border-radius: 15px;
+    
+    width: 90%;
+    height: fit-content;
+    background-color: rgb(176, 116, 232);
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.3rem;
+    padding: 1rem;
+
+
+}
+.contactBox{
+    border-radius: 25px;
+    text-decoration: none;
+    list-style: none;
+    background-color: yellow;
+    padding: 1rem;
+    height: 40%;
+}
+.contactBox .contacts{
+    width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.masterContainer .prekiuContainer {
+    width: 66.66%;
+}
+.masterContainer .prekiuContainer .preke {
+    border-radius: 15px;
+    color: green;
+    margin: 1rem;
+    height: 400px;
+    width: 250px;
+    background-color: rgb(198, 236, 157);
+    display: inline-block;
+}
+.masterContainer .prekiuContainer .preke img {
+    border-radius: 10px;
+    width: 90%;
+    margin: 5%;
+}
+.masterContainer .prekiuContainer .preke .prekesAprasymas {
+    padding: 0.5rem;
+    text-overflow: ellipsis;
+    white-space: wrap;
+    overflow: hidden;
+}
+.masterContainer .prekiuContainer .preke .prekesAprasymas a{
+    text-decoration: none;
+    color: red;
+}
+.masterContainer .prekiuContainer .preke .pridetiUzsakyma a{
+    color: rgb(74, 130, 222);
+}
