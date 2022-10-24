@@ -123,3 +123,47 @@ nav {
 .masterContainer .prekiuContainer .preke .pridetiUzsakyma a{
     color: rgb(74, 130, 222);
 }
+
+
+.masterContainer .login-container {
+    background-color: lightsalmon;
+    margin-right: 2.5%;
+    border-radius: 15px;
+
+}
+.masterContainer .login-form {
+    background-color: lightskyblue;
+    margin: 2.5%;
+    /* margin-left: 2.5%; */
+
+    border-radius: 15px;
+
+    width: 90%;
+    padding: 2.5%;
+}
+.masterContainer .login-form h1 {
+    color: lightseagreen;
+    width: 20%;
+    margin: auto;
+
+}
+
+.masterContainer .registration-form {
+    background-color: lightskyblue;
+    margin: 2.5%;
+    border-radius: 15px;
+    width: 90%;
+    padding: 2.5%;
+}
+.masterContainer .registration-form label {
+    display: inline-block;
+    width: 20%;
+    color: slategray;
+}
+
+.masterContainer .registration-form h1 {
+    color: lightseagreen;
+    width: 40%;
+    margin: auto;
+
+}

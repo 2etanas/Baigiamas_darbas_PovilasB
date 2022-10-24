@@ -4,24 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
 <body>
     <nav class="navbar">
-        <img src="Logo-01.png" alt="logo" height="200px">
+        <img src="../Logo-01.png" alt="logo" height="200px">
         <li class="navbaras">
-            <ul><a href="#">Home</a></ul>
+            <ul><a href="../index.html">Home</a></ul>
             <ul><a href="#">About</a></ul>
             <ul><a href="#">Prekės</a></ul>
             <ul><a href="#">Krepšelis</a></ul>
-            <ul><a href="pages/login.php">Login</a></ul>
+            <ul><a href="#">Login</a></ul>
         </li>
     </nav>
     <div class="masterContainer">
-        <div class="prekiuContainer">
+        <div class="login-container prekiuContainer">
+            <form action="login.php" method ="POST" class="login-form">
+                <h1>Prisijungimas</h1>
+                <br>
+                
+                <label for="name">Vartotojo vardas</label>
+                <input type="text" placeholder="Vartotojo vardas">
+                <label for="password">Slaptažodis</label>
+                <input type="password" placeholder="Slaptažodis">
+                <button type="submit" name="prisijungimas">Prisijungimas</button>
+                <button type="submit" name="create" value="vienas">Neturi prisijungimo?</button>
+            </form>
+            <form action="login.php" method ="POST" class="registration-form" style="display: 
+            <?php if (!isset($_POST["create"])){
+                echo 'none';
+            } ?>">
+
+
+                <h1>Vartotojo registracija</h1>
+                <br>
+                <label for="name">El.paštas</label>
+                <input type="text" placeholder="El.pašto adresas">
+                <br>
+                <label for="name">Vartotojo vardas</label>
+                <input type="text" placeholder="Vartotojo vardas">
+                <br>
+                <label for="password">Slaptažodis</label>
+                <input type="password" placeholder="Slaptažodis">
+                <br>                
+                <label for="name">Pakartoti slaptažodį</label>
+                <input type="password" placeholder="Pakartoti slaptažodį">
+                <br>
+                <br>
+                <label for="address" >Adresas:</label>
+                <br>
+                <input type="text" placeholder="Gatve">
+                <input type="text" placeholder="Namo numeris">
+                <input type="text" placeholder="Buto numers">
+                <input type="text" placeholder="Miestas">
+                <input type="text" placeholder="Šalis">
+                <br>
+                <label for="address" >Kontaktai:</label>
+                <br>
+                <input type="text" placeholder="Tel. numeris">
+                <br>
+                <br>
+
+
+
+                <button type="submit" name="registruokis">Registruotis!</button>
+            </form>
+
+
+
+        </div>
+        <!-- <div class="prekiuContainer">
             <div class="preke">
-                <img src="storephoto\hempseedoil250.JPG" alt="prekesphoto" width="fit-content" height="fit-content">
+                <img src="../storephoto/hempseedoil250.JPG" alt="prekesphoto" width="fit-content" height="fit-content">
                 <div >
                 <div class="prekesID prekesAprasymas" name="prekeNRX">ID: AL01</div>
                 <div class="prekesPavadinimas prekesAprasymas" name="prekeNRX">Kanapių aliejus 250ml</div>
@@ -153,7 +208,7 @@
             </div>
             </div> 
 
-        </div>
+        </div> -->
         <div class="rightBlock">
         <div class="infoContainer">
             <div class="infoCard">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquam optio quidem corporis. Temporibus tenetur eaque placeat ratione assumenda distinctio atque corporis neque magni expedita explicabo, eius aut adipisci eveniet. dolor sit amet consectetur adipisicing elit...</div>
