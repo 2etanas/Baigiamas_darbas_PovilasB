@@ -15,7 +15,7 @@
             <!-- <ul><a href="#">About</a></ul>
             <ul><a href="#">Prekės</a></ul> -->
             <ul><a href="krepselis.php">Krepšelis</a></ul>
-            <ul><a href="login.php">Login</a></ul>
+            <ul><a href="login.php">Login/Sign-Up</a></ul>
             <ul><a href="susisiekite.php">Susisiekite</a></ul>
 
         </li>
