@@ -1,5 +1,6 @@
 body{
     background-color: rgb(237, 200, 237);
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     
 }
 nav {
@@ -37,15 +38,15 @@ nav {
 .navbar .navbaras a {
     color: rgb(213, 114, 200);
     text-decoration: none;
-    font-size: large;
+    font-size: medium;
     font-weight: 400;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     background-color: rgb(219, 240, 126);
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .navbar .navbaras a:hover {
     background-color: rgb(65, 92, 25);   
@@ -142,7 +143,7 @@ nav {
     padding: 2.5%;
 }
 .masterContainer .login-form h1 {
-    color: lightseagreen;
+    color: rgb(4, 134, 127);
     width: 20%;
     margin: auto;
 
@@ -166,4 +167,115 @@ nav {
     width: 40%;
     margin: auto;
 
+}
+
+.masterContainer .prekiuContainer .susisiekite {
+    display: inline-block;
+    margin: auto;
+
+    color: darkgreen;
+}
+.masterContainer .prekiuContainer .susisiekite-forma label  {
+    display: inline-block;
+    width: 10%;
+}
+.masterContainer .prekiuContainer .susisiekite button {
+    background-color: rgb(180, 224, 142);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.masterContainer .basket-container{
+background-color: aquamarine;
+width: 66.66%;
+border-radius: 15px;
+}
+
+.masterContainer .prekiu-containter table{
+    border-style: dotted;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+.masterContainer .basket-container .pristatymo-container {
+    background-color: lightyellow;
+    border-radius: 15px;
+    width: 90%;
+
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.pristatymo-button1 {
+    background-color: blue;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.pristatymo-button2 {
+    background-color: rgb(44, 158, 84);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.pristatymo-button3 {
+    background-color: gold;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.masterContainer .basket-container .apmokejimo-container {
+    background-color: rgb(145, 201, 228);
+    border-radius: 15px;
+    width: 90%;
+
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.apmokejimo-button1 {
+    background-color: gold;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.apmokejimo-button2 {
+    background-color: rgb(182, 68, 157);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.apmokejimo-button3 {
+    background-color: rgb(127, 30, 80);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.apmokejimo-suma {
+    background-color: rgb(145, 201, 228);
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+.apmokejimo-suma h4, .apmokejimo-suma h1 {
+    text-align: right;
+    padding: 0.5rem;
+} 
+.apmokejimo-formos-adresas {
+    background-color: rgb(145, 201, 228);
+    border-radius: 15px;
+    width: 90%;
+
+    margin: auto;
+    margin-top: 5%;
+
+}
+.apmokejimo-formos-adresas-forma{
+    margin-left: 1rem;
+    text-align: left;
+    width: 90%;
 }

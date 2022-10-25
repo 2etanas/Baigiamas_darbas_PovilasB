@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,19 +23,96 @@
         </li>
     </nav>
     <div class="masterContainer">
-        <div class="login-container prekiuContainer">
-            <form action="login.php" method ="POST" class="login-form">
-                <h1>Prisijungimas</h1>
-                <br>
+        <div class="basket-container prekiuContainer">
+                <div class="prekiu-containter">
+                <?php include "../functions/mainFunctions.php"; ?>
+                <table>
+                    <tr>
+                        <th>Nr.</th>
+                        <th>Prekės ID</th>
+
+                        <th>Pavadinimas</th>
+                        <th>Foto</th>
+                        <th>Kaina</th>
+                        <th>Kiekis</th>
+                        <th>Pakeisti</th>
+                        <th>Suma, Eur</th>
+                        <th>Pašalinti</th>
+                    </tr>
+                    <tr>
+                        <th>1.</th>
+                        <th>AL001</th>
+
+                        <th>Kanapių aliejus 250ml</th>
+                        <th><img src="../storephoto\hempseedoil250.JPG" alt="prekesphoto" width="60px" height="60px"></th>
+                        <th><?php echo $kaina[0];?></th>
+                        <th><?php echo $skaicius[0];?></th>
+                        <th>
+                            <button name="aukstyn">+</button>
+                            <button name="zemyn">-</button>
+                        </th>
+                        <th><?php echo $tarpineSuma[0];?></th>
+                        <th><button>Pašalinti</button></th>
+                    </tr>
+                    </table>
+                </div>
+                <div class="pristatymo-container">
+                    <h3>Pristatymo būdai:</h3>
+                    <button class="pristatymo-button1">Paštomatas</button>
+                    <button class="pristatymo-button2">Atsiėmimas</button>
+                    <button class="pristatymo-button3">Kurjeris</button>
+                </div>
+                <div>
+                    <div class="apmokejimo-container">
+                    <h3>Apmokejimo būdai:</h3>
+                    <button class="apmokejimo-button1">Bankiniu pavedimu</button>
+                    <br>
+                    <button class="apmokejimo-button2">Grynais atsiemant</button>
+                    <button class="apmokejimo-button3">Paysera</button>
+                    </div>
+                    <div class="apmokejimo-suma">
+                        <h4>Pristatymo išlaidos: <?php echo $pristatymoIslaidos?> Eur</h4>
                 
+                    <h1>Galutinė suma: <?php echo $finalTotal?>Eur</h1>
+                    </div>
+                </div>
+                <div class="apmokejimo-formos-adresas">
+                <form action="login.php" method ="POST" class="apmokejimo-formos-adresas-forma">
+                <label for="name">El.paštas</label>
+                <input type="text" placeholder="El.pašto adresas">
+                <label for="address" >Tel. numeris:</label>
+                <input type="text" placeholder="Tel. numeris">
+                <br>
+                <label for="address" >Adresas:</label>
+                <br>
+                <input type="text" placeholder="Gatve">
+                <input type="text" placeholder="Namo numeris">
+                <input type="text" placeholder="Buto numers">
+                <input type="text" placeholder="Miestas">
+                <input type="text" placeholder="Šalis">
+                <br>
+                <button type="submit" name="registruokis">Apmokėti!</button>
+            </form>
+
+                </div>
+
+
+
+
+                </div>
+
+
+            <!-- <form action="login.php" method ="POST" class="login-form basket-container">
+                <h1>Prekių krepšelis</h1>
+                <br>
                 <label for="name">Vartotojo vardas</label>
                 <input type="text" placeholder="Vartotojo vardas">
                 <label for="password">Slaptažodis</label>
                 <input type="password" placeholder="Slaptažodis">
                 <button type="submit" name="prisijungimas">Prisijungimas</button>
                 <button type="submit" name="create" value="vienas">Neturi prisijungimo?</button>
-            </form>
-            <form action="login.php" method ="POST" class="registration-form" style="display: 
+            </form> -->
+            <!-- <form action="login.php" method ="POST" class="registration-form" style="display: 
             <?php if (!isset($_POST["create"])){
                 echo 'none';
             } ?>">
@@ -68,8 +147,8 @@
                 <br>
                 <br>
                 <button type="submit" name="registruokis">Registruotis!</button>
-            </form>
-        </div>
+            </form> -->
+        
         <div class="rightBlock">
         <div class="infoContainer">
             <div class="infoCard">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aliquam optio quidem corporis. Temporibus tenetur eaque placeat ratione assumenda distinctio atque corporis neque magni expedita explicabo, eius aut adipisci eveniet. dolor sit amet consectetur adipisicing elit...</div>

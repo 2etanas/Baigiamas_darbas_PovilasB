@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,54 +23,31 @@
         </li>
     </nav>
     <div class="masterContainer">
-        <div class="login-container prekiuContainer">
-            <form action="login.php" method ="POST" class="login-form">
-                <h1>Prisijungimas</h1>
+        <div class="prekiuContainer">
+            <form action="login.php" method ="POST" class="login-form susisiekite">
+                <h1>Susisiekite</h1>
                 <br>
+                <div class="susisiekite-forma">
+                <label for="name">Vardas:</label>
                 
-                <label for="name">Vartotojo vardas</label>
-                <input type="text" placeholder="Vartotojo vardas">
-                <label for="password">Slaptažodis</label>
-                <input type="password" placeholder="Slaptažodis">
-                <button type="submit" name="prisijungimas">Prisijungimas</button>
-                <button type="submit" name="create" value="vienas">Neturi prisijungimo?</button>
+                <input type="text" placeholder="Vardas">
+                <br>
+                <label for="email">El.paštas:</label>
+                
+                <input type="email" placeholder="El.paštas">
+                </div>
+                <br>
+                <textarea name="Text1" cols="100" rows="5" placeholder="Jūsų klausimas"> </textarea>
+                <br>
+
+                <button type="submit" name="susiek" value="forma">Susisiek!</button>
+                
             </form>
-            <form action="login.php" method ="POST" class="registration-form" style="display: 
-            <?php if (!isset($_POST["create"])){
+            <!-- <form action="login.php" method ="POST" class="registration-form" style="display: 
+            <?php if (!isset($_POST["prisijungimas"])){
                 echo 'none';
-            } ?>">
+            } ?>"-->
 
-
-                <h1>Vartotojo registracija</h1>
-                <br>
-                <label for="name">El.paštas</label>
-                <input type="text" placeholder="El.pašto adresas">
-                <br>
-                <label for="name">Vartotojo vardas</label>
-                <input type="text" placeholder="Vartotojo vardas">
-                <br>
-                <label for="password">Slaptažodis</label>
-                <input type="password" placeholder="Slaptažodis">
-                <br>                
-                <label for="name">Pakartoti slaptažodį</label>
-                <input type="password" placeholder="Pakartoti slaptažodį">
-                <br>
-                <br>
-                <label for="address" >Adresas:</label>
-                <br>
-                <input type="text" placeholder="Gatve">
-                <input type="text" placeholder="Namo numeris">
-                <input type="text" placeholder="Buto numers">
-                <input type="text" placeholder="Miestas">
-                <input type="text" placeholder="Šalis">
-                <br>
-                <label for="address" >Kontaktai:</label>
-                <br>
-                <input type="text" placeholder="Tel. numeris">
-                <br>
-                <br>
-                <button type="submit" name="registruokis">Registruotis!</button>
-            </form>
         </div>
         <div class="rightBlock">
         <div class="infoContainer">
